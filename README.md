@@ -3,10 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 
-[Expense Tracker PWA Screen](./public/assets/img/demo.png)
+![Expense Tracker PWA Screen](./public/assets/img/demo.png)
 
     
-### Check it out: [Deployed on Heroku](https://aiden-expense-tracker.herokuapp.com/)
+#### Check it out: [Deployed on Heroku](https://aiden-expense-tracker.herokuapp.com/)
 
 ## Description
 
