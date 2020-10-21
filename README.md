@@ -1,63 +1,72 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+# Expense Tracker PWA 
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 
-Offline Functionality:
+[Expense Tracker PWA Screen](./public/assets/img/demo.png)
 
-  * Enter deposits offline
+    
+### Check it out: [Deployed on Heroku](https://aiden-expense-tracker.herokuapp.com/)
 
-  * Enter expenses offline
+## Description
 
-When brought back online:
+**Expense Tracker PWA** is a progressive web application that allows the user to add expenses and deposits to their budget with or without a connection.
 
-  * Offline entries should be added to tracker.
+---
 
-## User Story
+#### Table of Contents
+
+* [Deployed Application](#check)
+* [Description](#description)
+* [User Story](#user)
+* [Demo](#demo)
+* [Technologies Used](#technologies)
+* [License](#license)
+* [Contributing](#contributing)
+* [Questions](#questions)
+
+---
+
+### User Story
+
+```
 AS AN avid traveller
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
 SO THAT my account balance is accurate when I am traveling
+```
 
-## Business Context
+### Demo 
 
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+![Demo of Site](./public/assets/img/demo.gif)
 
+Test it out for yourself: [Deployed on Heroku](https://aiden-expense-tracker.herokuapp.com/)
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+### Technologies Used
 
-- - -
+* MongoDB
+* Mongoose
+* Express
+* Morgan
+* Compression
+* Heroku
+* Dotenv
 
-## Commit Early and Often
+### Contributing
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+If you'd like to contribute to this application, feel free to submit a pull request.
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+#### License
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+This project is licensed under MIT. 
 
-* Follow these guidelines for committing:
+#### Questions
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+    
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+If you have any questions, please [email me.](mailto:aiden.threadgoode@gmail.com)
 
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
+If you'd like to see more of my work, feel free to check out [my github!](https://github.com/a-thread)
 
-  * Test your application before you commit to ensure functionality at every step in the development process
+*© 2020 Aiden Threadgoode*
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
+    
