@@ -25,21 +25,20 @@ request.onerror = (event) => {
 
 function saveRecord(record) {
   // creating a transaction on the pending db with readwrite access
-  db.transaction(["pending"], "readwrite")
-    // accessing pending object store
-    .objectStore("pending")
-    // adding record to pending object store
-    .add(record);
+  const transaction = db.transaction(["pending"], "readwrite");
+  // accessing pending object store
+  const store = transaction.objectStore("pending");
+  // adding record to pending object store
+  store.add(record);
 }
 
 function checkDatabase() {
-  const allRecords = db
-    // opening a transaction on pending db
-    .transaction(["pending"], "readwrite")
-    // accessing pending object store
-    .objectStore("pending")
-    // geting all records from store and setting to variable "allRecords"
-    .getAll();
+  // opening a transaction on pending db
+  const transaction = db.transaction(["pending"], "readwrite");
+  // accessing pending object store
+  const store = transaction.objectStore("pending");
+  // geting all records from store and setting to variable "allRecords"
+  const allRecords = store.getAll();
 
   allRecords.onsuccess = function () {
     if (allRecords.result.length > 0) {
@@ -53,11 +52,10 @@ function checkDatabase() {
       })
         .then(response => response.json())
         .then(() => {
-          const store = db
             // if successful, opening a transaction on pending db
-            .transaction(["pending"], "readwrite")
+            const transaction = db.transaction(["pending"], "readwrite");
             // accessing pending object store
-            .objectStore("pending");
+            const store = transaction.objectStore("pending");
 
           // clearing all items in store
           store.clear();
